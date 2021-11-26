@@ -1,4 +1,4 @@
-Netflix
+<h1 align="center">Netflix<h1/>
 <p align="center">
 <img src="https://imgur.com/SsaDIO3.jpg"/>
 <img src="https://imgur.com/Jy1uzUa.jpg"/>
