@@ -40,7 +40,7 @@ The application is built with:
 
 ## Features
 
-The application streams a wide variety of award-winning TV shows, movies, anime and documentaries.
+The app provides trailers for a wide range of award-winning TV series, movies, animation, and documentaries.
 
 Users can do the following:
 
