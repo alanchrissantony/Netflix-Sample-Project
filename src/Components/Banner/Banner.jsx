@@ -11,7 +11,7 @@ function Banner() {
     const [movie, setMovie] = useState()
     useEffect(() => {
         axios.get(trending).then((response)=>{
-            console.log(response.data.results[0]);
+            
             setMovie(response.data.results[0])
         })
     }, [])
@@ -25,7 +25,7 @@ function Banner() {
       };
     const [urlId, setUrlId] = useState('')
     const handleMovies=(id)=>{
-        console.log(id)
+        
         axios.get(`/movie/${id}/videos?api_key=${API_KEY}&language=en-US`).then((response)=>{
             if(response.data.results.length!==0){
                 setUrlId(response.data.results[0])
