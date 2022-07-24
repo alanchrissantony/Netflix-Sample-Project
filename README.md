@@ -18,6 +18,7 @@ NOTE: Please read the RUN section before opening an issue.
 
 ## Demo  
   
+https://alanchrissantony.github.io/Netflix-Sample-Project  
   
 <p align="center">
 <img src="https://imgur.com/SsaDIO3.jpg"/>
