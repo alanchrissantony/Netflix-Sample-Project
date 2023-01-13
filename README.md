@@ -55,4 +55,4 @@ Users can do the following:
   
   
   
-[Alan Chriss Antony](https://github.com/alanchrissantony)
+[Alan Chris Antony](https://github.com/alanchrissantony)
