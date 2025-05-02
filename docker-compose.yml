@@ -1,0 +1,49 @@
+version: "3.3"
+services:
+  netflix-app:
+    image: netflix-app-krushna-jagdale
+    container_name: "netflix-app"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8081:80"
+    restart: always
+
+  prometheus:
+    image: ubuntu/prometheus
+    container_name: prometheus-krushna
+    ports:
+      - "9090:9090"
+    restart: always
+
+
+
+  grafana:
+    image: grafana/grafana
+    container_name: grafana-krush-jagdale
+    ports:
+      - "3000:3000"
+    restart: always
+
+
+  node_exporter:
+    image: prom/node-exporter
+    container_name: node-exporter-jagdale
+    ports:
+      - "9100:9100"
+    restart: always
+
+
+
+  cadvisor:
+    image: gcr.io/cadvisor/cadvisor:latest
+    container_name: cadvisor
+    ports:
+      - "8085:8080"
+    volumes:
+      - /:/rootfs:ro
+      - /var/run:/var/run:ro
+      - /sys:/sys:ro
+      - /var/lib/docker/:/var/lib/docker:ro
+    restart: always
